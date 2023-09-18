@@ -1,22 +1,22 @@
-div {
-    height:100vh;
-    background-color:deeppink;
-}
-body{
-    height:100vh;
-    width:100%;
-}
 textarea{
     width:100%;
     height:100vh;
     resize:none;
     padding:0.25rem;
+    font-family: monospace;
 }
-
 
 @media (prefers-color-scheme: dark) {
     textarea {
-      background: #1b1b1b;
-      color: #8cb4ff;
+        background: #1b1b1b;
+        color: #8cb4ff;
+    }
+}
+
+/*what are you doing, chrome?*/
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+    body {
+      height: calc(100vh - 3px);
+      overflow: hidden;
     }
   }
