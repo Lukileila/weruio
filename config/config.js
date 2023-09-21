@@ -2,7 +2,7 @@ const fontFamily = document.querySelector("#font-family");
 const form = document.querySelector("form");
 const configBody = document.querySelector("#configbody");
 
-if (!localStorage.getItem("font-family")) {localStorage.setItem("font-family","initial")}
+if (!localStorage.getItem("font-family")) {localStorage.setItem("font-family","monospace")}
 
 configBody.style.fontFamily = localStorage.getItem("font-family");
 
@@ -16,4 +16,4 @@ form.addEventListener("submit", () => {
     localStorage.setItem("font-family",fontFamily.value);
     configBody.style.fontFamily = localStorage.getItem("font-family");
     document
-    }); 
+    });
